@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MovieCard from "./components/MovieCard";
 
 function App() {
-  const [count, setCount] = useState(0)
+  return(
+    <div style={{ padding: "20px" }}>
+      <h1> 𝐌𝐎𝐕𝐈𝐄 𝐐𝐔𝐈𝐂𝐊 𝐕𝐈𝐄𝐖 🎬 </h1>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <MovieCard
+      title="Maid in Manhattan"
+      year="2002"
+      director="Wayne Wang"
+      Genre="Romantic Comedy"
+      imageUrl="https://ph.pinterest.com/pin/237987161543330343/"/>
+
+      <MovieCard
+      title="How to Lose a Guy in 10 Days"
+      year="2003"
+      director="Donald Petrie"
+      Genre="Romantic Comedy"
+      imageUrl="https://ph.pinterest.com/pin/1031113277188619991/"/>
+
+      <MovieCard
+      title="Clueless"
+      year="1995"
+      director="Amy Heckerling"
+      Genre="Romantic Comedy"
+      imageUrl="https://ph.pinterest.com/pin/626211523177392008/"/>
+
+    </div>
+  );
 }
 
-export default App
+export default App;
