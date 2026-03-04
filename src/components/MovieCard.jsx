@@ -1,4 +1,4 @@
-function MovieCrad({ title, year, director, genre, imageUrl }) {
+function MovieCard({ title, year, director, genre, imageUrl }) {
     return(
         <div className="movie-card" style={{
             border: "1px solid #ccc",
@@ -15,7 +15,7 @@ function MovieCrad({ title, year, director, genre, imageUrl }) {
                 />
             )} 
 
-            <h3>{tiitle}</h3>
+            <h3>{title}</h3>
             <p><strong>Year:</strong> {year}</p>
             <p><strong>Director:</strong> {director}</p>
             <p><strong>Genre:</strong> {genre}</p>
